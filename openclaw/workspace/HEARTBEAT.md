@@ -14,7 +14,7 @@
 ### 备份信息
 - **时间**: 每天凌晨 3:00
 - **内容**: 整个 ~/.openclaw 文件夹 (~2800 文件)
-- **仓库**: https://github.com/mhkhiid/openclaw-config
+- **仓库**: https://github.com/mhkhiid/openclaw-config-v2
 - **日志**: ~/.openclaw-backup/backup.log
 
 ### 失败处理

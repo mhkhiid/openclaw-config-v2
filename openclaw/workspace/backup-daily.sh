@@ -6,7 +6,7 @@ set -e
 
 OPENCLAW_DIR="$HOME/.openclaw"
 BACKUP_DIR="$HOME/.openclaw-backup"
-REPO_NAME="openclaw-config"
+REPO_NAME="openclaw-config-v2"
 LOG_FILE="$BACKUP_DIR/backup.log"
 
 echo "========================================" | tee -a "$LOG_FILE"
@@ -49,7 +49,7 @@ fi
 # 检查远程仓库
 if ! git remote get-url origin 2>/dev/null | grep -q "github.com"; then
     echo "🔗 添加远程仓库..." | tee -a "$LOG_FILE"
-    git remote add origin "https://github.com/mhkhiid/openclaw-config.git" 2>/dev/null || true
+    git remote add origin "https://github.com/mhkhiid/openclaw-config-v2.git" 2>/dev/null || true
 fi
 
 # 添加所有文件
@@ -71,7 +71,7 @@ gh auth setup-git 2>/dev/null || true
 
 if git push origin main 2>&1 | tee -a "$LOG_FILE"; then
     echo "✅ 备份完成！$(date '+%H:%M:%S')" | tee -a "$LOG_FILE"
-    echo "🌐 https://github.com/mhkhiid/openclaw-config" | tee -a "$LOG_FILE"
+    echo "🌐 https://github.com/mhkhiid/openclaw-config-v2" | tee -a "$LOG_FILE"
 else
     echo "❌ 推送失败，请检查网络或认证" | tee -a "$LOG_FILE"
     exit 1
