@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "profiles": {
+    "openrouter/anthropic/claude-opus-4.6": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-CO47UBDsL8op6UdG97NdC13tOhe3kU56m1bDrjTPA9CKBjHtAmGdfExWanXijEPqovEJM5f2fW8MIGxa5eQQP4gkGA9Fo1Dgc7KWp3mcOJxLVUWFO6yyp9s",
+      "refresh": "jRTQD-oOOjoavKTmRAXjKmMH4dQvr1MhU5p_3ZzW7lE=",
+      "expires": 1802226307114
+    },
+    "moonshot:default": {
+      "type": "api_key",
+      "provider": "moonshot",
+      "key": "sk-UqQIqgqt3POd576K0ERFXtrrQQxdAKtlzFrairhvWyMyzBWA"
+    },
+    "kimi-coding:default": {
+      "type": "api_key",
+      "provider": "kimi-coding",
+      "key": "sk-kimi-yC01dyYdkezZAKWYeWUUi8pHI9qFcEalQFpcSxFHACt4wCxNOlUGvOoD1u9BWlwd"
+    }
+  },
+  "lastGood": {
+    "openrouter": "openrouter:default",
+    "minimax-portal": "minimax-portal:default",
+    "kimi-coding": "kimi-coding:default"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "lastUsed": 1770794538036,
+      "errorCount": 0,
+      "lastFailureAt": 1770733353436
+    },
+    "minimax-portal:default": {
+      "lastUsed": 1770734737609,
+      "errorCount": 0,
+      "lastFailureAt": 1770733351302
+    },
+    "kimi-coding:default": {
+      "lastUsed": 1770796455836,
+      "errorCount": 0
+    }
+  }
+}

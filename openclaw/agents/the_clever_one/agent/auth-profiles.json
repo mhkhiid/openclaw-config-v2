@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "profiles": {
+    "openrouter:default": {
+      "type": "api_key",
+      "provider": "openrouter",
+      "key": "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"
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-CO47UBDsL8op6UdG97NdC13tOhe3kU56m1bDrjTPA9CKBjHtAmGdfExWanXijEPqovEJM5f2fW8MIGxa5eQQP4gkGA9Fo1Dgc7KWp3mcOJxLVUWFO6yyp9s",
+      "refresh": "jRTQD-oOOjoavKTmRAXjKmMH4dQvr1MhU5p_3ZzW7lE=",
+      "expires": 1802226307114
+    },
+    "moonshot:default": {
+      "type": "api_key",
+      "provider": "moonshot",
+      "key": "sk-UqQIqgqt3POd576K0ERFXtrrQQxdAKtlzFrairhvWyMyzBWA"
+    },
+    "kimi-coding:default": {
+      "type": "api_key",
+      "provider": "kimi-coding",
+      "key": "sk-kimi-yC01dyYdkezZAKWYeWUUi8pHI9qFcEalQFpcSxFHACt4wCxNOlUGvOoD1u9BWlwd"
+    }
+  },
+  "lastGood": {
+    "openrouter": "openrouter:default",
+    "minimax-portal": "minimax-portal:default",
+    "kimi-coding": "kimi-coding:default"
+  },
+  "usageStats": {
+    "openrouter:default": {
+      "lastUsed": 1770869908820,
+      "errorCount": 0,
+      "lastFailureAt": 1770733353436
+    },
+    "minimax-portal:default": {
+      "lastUsed": 1770801203869,
+      "errorCount": 0,
+      "lastFailureAt": 1770733351302
+    },
+    "kimi-coding:default": {
+      "lastUsed": 1770870280849,
+      "errorCount": 0
+    }
+  }
+}
