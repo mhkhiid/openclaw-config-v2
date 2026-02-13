@@ -161,6 +161,13 @@
         "workspace": "/Users/hengdeding/.openclaw/workspace-the_clever_one",
         "agentDir": "/Users/hengdeding/.openclaw/agents/the_clever_one/agent",
         "model": "openrouter/auto"
+      },
+      {
+        "id": "researcher",
+        "name": "调查圆",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-researcher",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/researcher/agent",
+        "model": "kimi-coding/k2p5"
       }
     ]
   },

@@ -29,6 +29,7 @@ rsync -av --delete \
     --exclude='**/.git' \
     --exclude='devices' \
     --exclude='browser' \
+    --exclude='sessions/*.jsonl' \
     "$OPENCLAW_DIR/" "$BACKUP_DIR/openclaw/"
 
 # 记录备份文件数量
