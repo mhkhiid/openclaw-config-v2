@@ -10,7 +10,7 @@
 | Agent | ID | Workspace | 主要职责 | 配置状态 | 备注 |
 |-------|-----|-----------|----------|----------|------|
 | 助手圆 | main | `workspace` | 通用助手 / Orchestrator | ✅ 完整 | 当前运行中 |
-| 内容官 | neirongguan | `workspace-2` | 短视频/小红书内容创作 | ⚠️ 待完善 | IDENTITY 基础完成，待补充创作风格 |
+| 内容官 | neirongguan | `workspace-neirongguan` | 短视频/小红书内容创作 | ⚠️ 待完善 | IDENTITY 基础完成，待补充创作风格 |
 | 聪明圆 | the_clever_one | `workspace-the_clever_one` | OpenClaw 技术专家 | ⚠️ 待完善 | IDENTITY 基础完成，待补充技能细节 |
 
 ---

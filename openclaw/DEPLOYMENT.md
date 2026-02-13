@@ -84,7 +84,7 @@ openclaw gateway status
 - [ ] 配置身份文件：SOUL.md、IDENTITY.md
 
 #### 4.2 内容创作 Agent（内容官）
-- [ ] 创建 workspace-2: `~/.openclaw/workspace-2`
+- [ ] 创建 workspace-neirongguan: `~/.openclaw/workspace-neirongguan`
 - [ ] Agent ID: `neirongguan`
 - [ ] 配置独立身份文件
 - [ ] 绑定独立飞书应用
@@ -276,6 +276,7 @@ openclaw doctor --fix     # 自动修复
 | 日期 | 更新内容 | 备注 |
 |------|---------|------|
 | 2026-02-11 | 创建部署文档 | 初始版本，包含所有已完成的配置 |
+| 2026-02-13 | 添加调查圆飞书机器人 | 新增 diaochayuan 账户绑定 researcher agent |
 
 ---
 

@@ -177,7 +177,7 @@ openclaw browser screenshot --browser-profile openclaw
 
 ### Agent 2: 内容官 (neirongguan)
 - **ID**: neirongguan
-- **Workspace**: ~/.openclaw/workspace-2
+- **Workspace**: ~/.openclaw/workspace-neirongguan
 - **用途**: 内容创作和营销文案
 - **Identity**: 内容官 📝
 - **IDENTITY.md**: 已创建，需要 Alex 进一步完善

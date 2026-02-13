@@ -1,12 +1,12 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.9",
-    "lastTouchedAt": "2026-02-11T09:09:48.773Z"
+    "lastTouchedAt": "2026-02-11T09:19:08.818Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-11T09:09:48.742Z",
+    "lastRunAt": "2026-02-11T09:19:08.807Z",
     "lastRunVersion": "2026.2.9",
-    "lastRunCommand": "doctor",
+    "lastRunCommand": "configure",
     "lastRunMode": "local"
   },
   "auth": {
@@ -98,13 +98,14 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "kimi-coding/k2p5",
         "fallbacks": [
-          "moonshot/kimi-k2.5",
           "minimax-portal/MiniMax-M2.1",
+          "minimax-portal/MiniMax-M2.1-lightning",
           "openrouter/deepseek/deepseek-v3.2",
-          "minimax-portal/MiniMax-M2.1-lightning"
-        ]
+          "moonshot/kimi-k2.5",
+          "openrouter/anthropic/claude-opus-4.6"
+        ],
+        "primary": "kimi-coding/k2p5"
       },
       "models": {
         "kimi-coding/k2p5": {
@@ -113,18 +114,15 @@
         "minimax-portal/MiniMax-M2.1": {
           "alias": "minimax-m2.1"
         },
-        "openrouter/anthropic/claude-opus-4.6": {
-          "alias": "Claude Opus 4.6"
-        },
-        "openrouter/auto": {
-          "alias": "OpenRouter Auto"
-        },
         "minimax-portal/MiniMax-M2.1-lightning": {
           "alias": "minimax-m2.1-lightning"
         },
         "openrouter/deepseek/deepseek-v3.2": {},
         "moonshot/kimi-k2.5": {
           "alias": "Kimi"
+        },
+        "openrouter/anthropic/claude-opus-4.6": {
+          "alias": "Claude Opus 4.6"
         }
       },
       "workspace": "/Users/hengdeding/.openclaw/workspace",

@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.9",
-    "lastTouchedAt": "2026-02-11T09:17:55.000Z"
+    "lastTouchedAt": "2026-02-12T04:17:49.854Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-11T09:17:54.986Z",
+    "lastRunAt": "2026-02-11T09:19:08.807Z",
     "lastRunVersion": "2026.2.9",
     "lastRunCommand": "configure",
     "lastRunMode": "local"
@@ -98,15 +98,12 @@
   "agents": {
     "defaults": {
       "model": {
+        "primary": "kimi-coding/k2p5",
         "fallbacks": [
-          "kimi-coding/k2p5",
-          "minimax-portal/MiniMax-M2.1",
-          "minimax-portal/MiniMax-M2.1-lightning",
-          "openrouter/deepseek/deepseek-v3.2",
           "moonshot/kimi-k2.5",
+          "openrouter/deepseek/deepseek-v3.2",
           "openrouter/anthropic/claude-opus-4.6"
-        ],
-        "primary": "openrouter/auto"
+        ]
       },
       "models": {
         "kimi-coding/k2p5": {
@@ -114,9 +111,6 @@
         },
         "minimax-portal/MiniMax-M2.1": {
           "alias": "minimax-m2.1"
-        },
-        "openrouter/auto": {
-          "alias": "OpenRouter Auto"
         },
         "minimax-portal/MiniMax-M2.1-lightning": {
           "alias": "minimax-m2.1-lightning"
@@ -127,6 +121,9 @@
         },
         "openrouter/anthropic/claude-opus-4.6": {
           "alias": "Claude Opus 4.6"
+        },
+        "openrouter/auto": {
+          "alias": "OpenRouter"
         }
       },
       "workspace": "/Users/hengdeding/.openclaw/workspace",
@@ -150,10 +147,31 @@
       {
         "id": "neirongguan",
         "name": "内容官",
-        "workspace": "/Users/hengdeding/.openclaw/workspace-2",
-        "agentDir": "/Users/hengdeding/.openclaw/agents/assistant2/agent",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-neirongguan",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/neirongguan/agent",
         "model": {
           "primary": "openrouter/anthropic/claude-opus-4.6"
+        }
+      },
+      {
+        "id": "the_clever_one",
+        "name": "the_clever_one",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-the_clever_one",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/the_clever_one/agent",
+        "model": "openrouter/anthropic/claude-opus-4.6"
+      },
+      {
+        "id": "researcher",
+        "name": "调查圆",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-researcher",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/researcher/agent",
+        "model": "kimi-coding/k2p5",
+        "tools": {
+          "browser": {
+            "enabled": true,
+            "target": "host",
+            "profile": "openclaw"
+          }
         }
       }
     ]
@@ -186,6 +204,20 @@
         "channel": "feishu",
         "accountId": "zhushouyuan"
       }
+    },
+    {
+      "agentId": "the_clever_one",
+      "match": {
+        "channel": "feishu",
+        "accountId": "the_clever_one"
+      }
+    },
+    {
+      "agentId": "researcher",
+      "match": {
+        "channel": "feishu",
+        "accountId": "diaochayuan"
+      }
     }
   ],
   "messages": {
@@ -208,8 +240,8 @@
       "debounceMs": 0
     },
     "feishu": {
-      "appId": "cli_a90368f2f3b89cd1",
-      "appSecret": "cdAwyClBlBb72i734rIYqhdxpPxUwJUo",
+      "appId": "cli_a9040d47c7f8dcc5",
+      "appSecret": "s072SeS2wBayH71peU4hZfjFAYoEENgU",
       "connectionMode": "websocket",
       "dmPolicy": "open",
       "groupPolicy": "open",
@@ -225,6 +257,22 @@
         "zhushouyuan": {
           "appId": "cli_a90368f2f3b89cd1",
           "appSecret": "cdAwyClBlBb72i734rIYqhdxpPxUwJUo",
+          "connectionMode": "websocket",
+          "dmPolicy": "open",
+          "enabled": true,
+          "groupPolicy": "open"
+        },
+        "the_clever_one": {
+          "appId": "cli_a9040d47c7f8dcc5",
+          "appSecret": "s072SeS2wBayH71peU4hZfjFAYoEENgU",
+          "connectionMode": "websocket",
+          "dmPolicy": "open",
+          "enabled": true,
+          "groupPolicy": "open"
+        },
+        "diaochayuan": {
+          "appId": "cli_a9040e00c8b8dcc0",
+          "appSecret": "NZeT5w240EvDQ0dZ7Md7cd8TS13Lx5SZ",
           "connectionMode": "websocket",
           "dmPolicy": "open",
           "enabled": true,
