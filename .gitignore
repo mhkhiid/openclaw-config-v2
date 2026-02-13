@@ -1,3 +1,7 @@
 openclaw/agents/*/agent/auth-profiles.json
 openclaw/agents/*/sessions/*.jsonl
+openclaw/agents/*/sessions/*.jsonl.lock
+openclaw/agents/*/sessions/*.deleted.*
 openclaw/identity/device-auth.json
+*.lock
+*.deleted.*
