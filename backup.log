@@ -94,3 +94,9 @@ error: failed to push some refs to 'https://github.com/mhkhiid/openclaw-config-v
 ========================================
 📁 备份 ~/.openclaw 所有文件...
 ✅ 已备份     1153 个文件
+💾 提交更改: Daily backup - 2026-02-14 03:00:01 -     1153 files
+🚀 推送到 GitHub...
+fatal: could not read Username for 'https://github.com': Device not configured
+✅ 备份完成！03:00:03
+🌐 https://github.com/mhkhiid/openclaw-config-v2
+
