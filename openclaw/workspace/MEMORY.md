@@ -27,6 +27,10 @@
 - **求助门槛**：只有当没有任何其他方法时，或者涉及敏感信息需要授权时，才来问 Alex
 - **多重解读时**：主动提出疑问，确认Alex意图，避免误解
 
+### 成本控制（2026-02-14 设定）
+- **单任务消耗超过 $20 时，必须暂停并提醒 Alex**，获得确认后才继续
+- 执行长任务时注意累计成本，主动控制开销
+
 ## 项目目标
 
 构建multi-agent AI workflow，主要用于：
@@ -149,6 +153,14 @@
 - **Web UI**: http://127.0.0.1:18789/
 - **token**: 2e4f5189d44ae8c9325fae5920fe6cef0ab76f0b73d9b480
 - **注意**: 浏览器截图需要 Chrome 扩展连接到某个 tab（我无法自己完成这步）
+
+### Docker 沙箱 ✅（2026-02-14）
+- **Docker**: CLI v29.2.0 + Colima v0.10.0（开机自启）
+- **沙箱镜像**: openclaw-sandbox:bookworm-slim
+- **调查圆配置**: mode=all, scope=agent, workspaceAccess=rw, network=bridge
+- **关键教训**: `tools.exec.host: "gateway"` 会绕过沙箱！必须移除让自动路由生效
+- **launchd**: 需在 plist 中设 DOCKER_HOST=unix:///Users/hengdeding/.colima/default/docker.sock
+- **验证通过**: 调查圆 exec 返回 Linux（非 Darwin），沙箱隔离生效
 
 ### 浏览器控制 (Playwright vs Chrome扩展)
 **⚠️ 重要教训（2026-02-10）**：

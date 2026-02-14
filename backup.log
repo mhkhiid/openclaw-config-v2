@@ -105,3 +105,15 @@ fatal: could not read Username for 'https://github.com': Device not configured
 ========================================
 📁 备份 ~/.openclaw 所有文件...
 ✅ 已备份     1070 个文件
+💾 提交更改: Daily backup - 2026-02-14 10:38:00 -     1070 files
+🚀 推送到 GitHub...
+To https://github.com/mhkhiid/openclaw-config-v2.git
+   6230674..ed0c035  main -> main
+✅ 备份完成！10:38:02
+🌐 https://github.com/mhkhiid/openclaw-config-v2
+
+========================================
+🦞 OpenClaw 每日备份 - 2026-02-15 03:00:01
+========================================
+📁 备份 ~/.openclaw 所有文件...
+✅ 已备份     1105 个文件

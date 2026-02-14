@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.9",
-    "lastTouchedAt": "2026-02-13T12:47:02.491Z"
+    "lastTouchedAt": "2026-02-14T13:42:52.364Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-13T12:47:02.475Z",
@@ -127,8 +127,28 @@
         }
       },
       "workspace": "/Users/hengdeding/.openclaw/workspace",
+      "memorySearch": {
+        "sources": [
+          "memory",
+          "sessions"
+        ],
+        "extraPaths": [
+          "digital-twin"
+        ],
+        "experimental": {
+          "sessionMemory": true
+        },
+        "provider": "gemini",
+        "remote": {
+          "apiKey": "AIzaSyApG_SaFvXeMdReNinDT5UgHYvK3TTSQkc"
+        },
+        "model": "gemini-embedding-001"
+      },
       "compaction": {
         "mode": "safeguard"
+      },
+      "heartbeat": {
+        "model": "kimi-coding/k2p5"
       },
       "maxConcurrent": 4,
       "subagents": {
@@ -138,7 +158,7 @@
     "list": [
       {
         "id": "main",
-        "model": "kimi-coding/k2p5",
+        "model": "openrouter/anthropic/claude-opus-4.6",
         "identity": {
           "name": "助手圆",
           "emoji": "✨"
@@ -166,7 +186,30 @@
         "workspace": "/Users/hengdeding/.openclaw/workspace-researcher",
         "agentDir": "/Users/hengdeding/.openclaw/agents/researcher/agent",
         "model": "kimi-coding/k2p5",
-        "tools": {}
+        "sandbox": {
+          "mode": "all",
+          "scope": "agent",
+          "workspaceAccess": "rw",
+          "docker": {
+            "network": "bridge"
+          }
+        },
+        "tools": {
+          "allow": [
+            "web_search",
+            "web_fetch",
+            "browser",
+            "read",
+            "write",
+            "edit",
+            "exec",
+            "process",
+            "memory_search",
+            "memory_get",
+            "message",
+            "sessions_send"
+          ]
+        }
       }
     ]
   },
@@ -180,8 +223,10 @@
       }
     },
     "exec": {
-      "host": "gateway",
       "security": "full"
+    },
+    "agentToAgent": {
+      "enabled": true
     }
   },
   "bindings": [

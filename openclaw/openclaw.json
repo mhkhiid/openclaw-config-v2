@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.9",
-    "lastTouchedAt": "2026-02-13T12:52:48.600Z"
+    "lastTouchedAt": "2026-02-14T15:01:48.081Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-13T12:47:02.475Z",
@@ -127,8 +127,28 @@
         }
       },
       "workspace": "/Users/hengdeding/.openclaw/workspace",
+      "memorySearch": {
+        "sources": [
+          "memory",
+          "sessions"
+        ],
+        "extraPaths": [
+          "digital-twin"
+        ],
+        "experimental": {
+          "sessionMemory": true
+        },
+        "provider": "gemini",
+        "remote": {
+          "apiKey": "AIzaSyApG_SaFvXeMdReNinDT5UgHYvK3TTSQkc"
+        },
+        "model": "gemini-embedding-001"
+      },
       "compaction": {
         "mode": "safeguard"
+      },
+      "heartbeat": {
+        "model": "kimi-coding/k2p5"
       },
       "maxConcurrent": 4,
       "subagents": {
@@ -137,19 +157,58 @@
     },
     "list": [
       {
-        "id": "main"
+        "id": "main",
+        "model": "openrouter/anthropic/claude-opus-4.6",
+        "identity": {
+          "name": "助手圆",
+          "emoji": "✨"
+        }
       },
       {
-        "id": "neirongguan"
+        "id": "neirongguan",
+        "name": "内容官",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-neirongguan",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/neirongguan/agent",
+        "model": {
+          "primary": "openrouter/anthropic/claude-opus-4.6"
+        }
       },
       {
-        "id": "the_clever_one"
+        "id": "the_clever_one",
+        "name": "the_clever_one",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-the_clever_one",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/the_clever_one/agent",
+        "model": "openrouter/anthropic/claude-opus-4.6"
       },
       {
         "id": "researcher",
+        "name": "调查圆",
+        "workspace": "/Users/hengdeding/.openclaw/workspace-researcher",
+        "agentDir": "/Users/hengdeding/.openclaw/agents/researcher/agent",
+        "model": "kimi-coding/k2p5",
+        "sandbox": {
+          "mode": "all",
+          "workspaceAccess": "rw",
+          "scope": "agent",
+          "docker": {
+            "image": "openclaw-sandbox:researcher",
+            "network": "bridge"
+          }
+        },
         "tools": {
-          "alsoAllow": [
-            "browser"
+          "allow": [
+            "web_search",
+            "web_fetch",
+            "browser",
+            "read",
+            "write",
+            "edit",
+            "exec",
+            "process",
+            "memory_search",
+            "memory_get",
+            "message",
+            "sessions_send"
           ]
         }
       }
@@ -164,8 +223,10 @@
         "timeoutSeconds": 30
       }
     },
+    "agentToAgent": {
+      "enabled": true
+    },
     "exec": {
-      "host": "gateway",
       "security": "full"
     }
   },

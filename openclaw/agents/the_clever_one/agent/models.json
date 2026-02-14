@@ -12,26 +12,10 @@
             "text"
           ],
           "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192
-        },
-        {
-          "id": "MiniMax-M2.1-lightning",
-          "name": "MiniMax M2.1 Lightning",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
+            "input": 15,
+            "output": 60,
+            "cacheRead": 2,
+            "cacheWrite": 10
           },
           "contextWindow": 200000,
           "maxTokens": 8192
@@ -40,13 +24,13 @@
       "apiKey": "minimax-oauth"
     },
     "moonshot": {
-      "baseUrl": "https://api.moonshot.cn/v1",
+      "baseUrl": "https://api.moonshot.ai/v1",
       "api": "openai-completions",
       "models": [
         {
           "id": "kimi-k2.5",
           "name": "Kimi K2.5",
-          "reasoning": true,
+          "reasoning": false,
           "input": [
             "text"
           ],
